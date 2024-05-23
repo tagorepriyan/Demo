@@ -5,51 +5,6 @@ body {
     box-sizing: border-box;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links li {
-    display: inline;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 16px;
-}
-
-.search-bar input {
-    padding: 5px;
-}
-
-.profile-icon img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
 .hero {
     background: url('hero-bg.jpg') no-repeat center center/cover;
     color: white;
@@ -60,6 +15,25 @@ nav {
 .hero-content {
     max-width: 600px;
     margin: 0 auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+h1
+.video-player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Adjust the height as needed */
+    margin-top: 20px;
+}
+
+.video-player video {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .cta-button {
@@ -157,11 +131,4 @@ nav {
     margin-top: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
 }
