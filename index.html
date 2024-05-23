@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam Video Streaming</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">StreamSite</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Top Streams</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="profile-icon">
+                <img src="profile.jpg" alt="Profile">
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to StreamSite</h1>
+            <p>Discover the best live streams from around the world.</p>
+            <a href="#" class="cta-button">Start Streaming</a>
+        </div>
+    </section>
+
+    <!-- Featured Streams -->
+    <section class="featured-streams">
+        <h2>Featured Streams</h2>
+        <div class="stream-grid">
+            <!-- Stream Thumbnail -->
+            <div class="stream-item">
+                <img src="stream1.jpg" alt="Stream 1">
+                <div class="stream-info">
+                    <h3>Stream Title 1</h3>
+                    <p>Viewer Count: 1200</p>
+                </div>
+            </div>
+            <!-- Repeat for more streams -->
+        </div>
+    </section>
+
+    <!-- Stream Page -->
+    <section class="stream-page">
+        <div class="video-player">
+            <video controls>
+                <source src="stream.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="stream-details">
+            <div class="streamer-info">
+                <img src="streamer.jpg" alt="Streamer">
+                <div class="streamer-details">
+                    <h3>Streamer Name</h3>
+                    <p>Followers: 5000</p>
+                    <button class="follow-button">Follow</button>
+                </div>
+            </div>
+            <div class="stream-description">
+                <p>This is the stream description. Here you can add more details about the stream.</p>
+            </div>
+        </div>
+        <div class="chat-section">
+            <h4>Live Chat</h4>
+            <div class="chat-messages">
+                <!-- Messages will be dynamically added here -->
+            </div>
+            <input type="text" placeholder="Type a message...">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 StreamSite. All rights reserved.</p>
+    </footer>
+</body>
+</html>
